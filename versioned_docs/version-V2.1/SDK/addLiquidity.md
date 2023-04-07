@@ -63,7 +63,7 @@ const BIN_STEP = "2"
 
 ## 2. Approve the LBRouter to use your USDC and USDC.e tokens
 ```js
-const spender = LBRouterV21ABI[CHAIN_ID]
+const spender = LB_ROUTER_V21_ADDRESS[CHAIN_ID]
 const estimatedGas = await tokenContract.estimateGas.approve(spender, MaxUint256)
 await tokenContract.approve(
   spender, 
